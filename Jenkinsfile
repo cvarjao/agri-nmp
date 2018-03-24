@@ -1,5 +1,6 @@
 #!groovy
 
+
 def bcModels(){
     def models = []
         models.add(['-f', 'OpenShift/dotnet-20.bc.json',
