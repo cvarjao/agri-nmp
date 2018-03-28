@@ -41,7 +41,15 @@
                 "labels": null
             },
             "spec": {
-                "triggers": [],
+                "triggers": [
+                    {
+                        "type": "ImageChange",
+                        "imageChange": {}
+                    },
+                    {
+                        "type": "ConfigChange"
+                    }
+                ],
                 "runPolicy": "SerialLatestOnly",
                 "source": {
                     "type": "Git",
