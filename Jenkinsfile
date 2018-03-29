@@ -20,8 +20,8 @@ def dcModels(){
     def models = []
 
     models.add(['-f', 'OpenShift/nmp.dc.json',
-     '-p', 'NAME_SUFFIX=${dcSuffix}',
-     '-p', 'ENV_NAME=${envName}'])
+     '-p', 'NAME_SUFFIX=${deploy.dcSuffix}',
+     '-p', 'ENV_NAME=${deploy.envName}'])
 
     return models;
 }
