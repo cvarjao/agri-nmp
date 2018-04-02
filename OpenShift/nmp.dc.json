@@ -19,6 +19,13 @@
             "description": "The suffix for all created objects",
             "required": false,
             "value": "dev"
+        },
+        {
+            "name": "HOST",
+            "displayName": "HOST",
+            "description": "Main host name",
+            "required": false,
+            "value": ""
         }
     ],
     "objects": [
@@ -320,6 +327,7 @@
                 "labels": null
             },
             "spec": {
+                "host": "${HOST}",
                 "to": {
                     "kind": "Service",
                     "name": "nmp${NAME_SUFFIX}",

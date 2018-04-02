@@ -13,7 +13,7 @@ basicPipeline {
             ['file':'OpenShift/nmp.bc.json'],
         ],
         'deployment':[
-            ['file':'OpenShift/nmp.dc.json']
+            ['file':'OpenShift/nmp.dc.json', 'params':['HOST':'agri-nmp-csnr-devops-lab-deploy.pathfinder.gov.bc.ca']]
         ]
     ]
 }
