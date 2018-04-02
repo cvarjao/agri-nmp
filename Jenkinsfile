@@ -17,6 +17,3 @@ basicPipeline {
         ]
     ]
 }
-
-
-
