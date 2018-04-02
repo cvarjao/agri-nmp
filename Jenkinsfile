@@ -4,7 +4,7 @@ basicPipeline {
     env = [
         'dev':[:],
         'test':[:],
-        'prod':['params':['host':'nmp-csnr-devops-lab-deploy.pathfinder.gov.bc.ca']]
+        'prod':['params':['host':'nmp.apps.nrs.gov.bc.ca']]
     ]
     templates = [
         'build':[
