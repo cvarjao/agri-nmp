@@ -4,7 +4,7 @@ basicPipeline {
     env = [
         'dev':['project':'csnr-devops-lab-deploy'],
         'test':['project':'csnr-devops-lab-deploy'],
-        'prod':['project':'csnr-devops-lab-deploy']
+        'prod':['project':'csnr-devops-lab-deploy', 'host':'DEPLOY_ENV_NAME']
     ]
     templates = [
         'build':[
@@ -13,7 +13,7 @@ basicPipeline {
             ['file':'OpenShift/nmp.bc.json'],
         ],
         'deployment':[
-            ['file':'OpenShift/nmp.dc.json', 'params':['HOST':'agri-nmp-csnr-devops-lab-deploy.pathfinder.gov.bc.ca']]
+            ['file':'OpenShift/nmp.dc.json', 'params':['HOST':'${env[DEPLOY_ENV_NAME]?.host?:""}']]
         ]
     ]
 }
