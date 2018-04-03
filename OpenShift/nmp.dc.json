@@ -324,7 +324,10 @@
             "metadata": {
                 "name": "nmp${NAME_SUFFIX}",
                 "creationTimestamp": null,
-                "labels": null
+                "labels": null,
+                "annotations": {
+                    "template.openshift.io.bcgov/tls-secret-name": "nmp-route-cert${NAME_SUFFIX}"
+                }
             },
             "spec": {
                 "host": "${HOST}",
